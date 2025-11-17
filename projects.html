@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Projects | Putong Kang</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 16px;
+      line-height: 1.6;
+      color: #222;
+      background: #fafafa;
+    }
+    header {
+      border-bottom: 1px solid #ddd;
+      margin-bottom: 24px;
+      padding-bottom: 8px;
+    }
+    h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    h2 {
+      margin-top: 1.8rem;
+      font-size: 1.3rem;
+    }
+    .subtitle {
+      color: #555;
+      margin-top: 4px;
+    }
+    nav {
+      margin-top: 12px;
+      font-size: 0.95rem;
+    }
+    nav a {
+      margin-right: 12px;
+      text-decoration: none;
+      color: #0066cc;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .section {
+      margin-bottom: 28px;
+    }
+    .project {
+      margin-bottom: 32px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid #e0e0e0;
+    }
+    .project-meta {
+      font-size: 0.9rem;
+      color: #666;
+      margin-bottom: 4px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    .project-image-placeholder {
+      margin-top: 10px;
+      padding: 10px;
+      border: 1px dashed #ccc;
+      font-size: 0.9rem;
+      color: #666;
+      background: #fdfdfd;
+    }
+    a.inline-link {
+      color: #0066cc;
+      text-decoration: none;
+    }
+    a.inline-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Projects</h1>
+    <div class="subtitle">
+      Selected research and prototyping work in advanced manufacturing, system integration, and process innovation.
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="publications.html">Publications</a>
+      <a href="cv/CV_PutongKang_public.pdf" target="_blank">CV</a>
+      <a href="https://github.com/PutongK" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/putongkang" target="_blank">LinkedIn</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="section">
+      <p>
+        This page highlights a selection of projects spanning incremental sheet forming (ISF), texture-induced morphing,
+        mold tooling, robotic forming, and advanced manufacturing collaborations with industry partners. Each project
+        integrates experimental work, system design, and data-driven analysis.
+      </p>
+    </section>
+
+    <!-- Texture-Induced Morphing -->
+    <section class="project">
+      <h2>Texture-Induced Morphing for Programmable Sheet Metal Structures</h2>
+      <div class="project-meta">
+        Ph.D. Research Assistant · Northwestern University · Aug 2024 – Present
+      </div>
+      <p>
+        Developed a method to use Incremental Sheet Forming (ISF) to embed residual stress patterns via engineered surface
+        textures, enabling sheet metal to morph into target geometries when boundary conditions are modified. The work
+        combines finite-strain plate theory with optimization algorithms to design texture layouts that minimize shape
+        error under given constraints.
+      </p>
+      <ul>
+        <li>Applied ISF to create tailored surface textures that drive controlled morphing after forming.</li>
+        <li>Built an analytical–experimental workflow to correlate morphing behavior with texture geometry and forming parameters.</li>
+        <li>Used inverse design and optimization to infer texture patterns from desired final shapes.</li>
+      </ul>
+      <div class="project-image-placeholder">
+        <!-- Replace this with an actual image tag later, e.g.:
+        <img src="assets/images/morphing_demo.png" alt="Texture-induced morphing demo" width="100%">
+        -->
+        [Figure placeholder – morphing shapes or comparison of initial vs. morphed geometry]
+      </div>
+    </section>
+
+    <!-- Mold Liners by ISF -->
+    <section class="project">
+      <h2>Mold Liners Produced by Incremental Sheet Forming</h2>
+      <div class="project-meta">
+        Ph.D. Research Assistant · Northwestern University · Jun 2024 – Mar 2025 · 
+        Published in CIRP Annals
+      </div>
+      <p>
+        Investigated Incremental Sheet Forming as a method for producing mold liners for small-scale molding systems.
+        Designed toolpaths based on tooltip geometry and feature skeletons to create high-quality textures and features
+        on thin metal liners used with PDMS and other casting materials.
+      </p>
+      <ul>
+        <li>Developed toolpath strategies to control texture fidelity and geometric accuracy on formed liners.</li>
+        <li>Demonstrated improved demolding performance and surface finish compared to SLA-printed molds.</li>
+        <li>Showed potential for broader material compatibility and low-volume, rapidly reconfigurable tooling.</li>
+      </ul>
+      <p>
+        Representative publication:
+        <a class="inline-link" href="https://doi.org/10.1016/j.cirp.2024.02.003" target="_blank">
+          CIRP Annals – Mold liners produced by incremental sheet forming
+        </a>
+      </p>
+      <div class="project-image-placeholder">
+        [Figure placeholder – mold liner geometry, surface details, or comparison with SLA tooling]
+      </div>
+    </section>
+
+    <!-- ESAFORM Benchmark / Geometric Accuracy -->
+    <section class="project">
+      <h2>Geometric Accuracy in Incremental Sheet Forming – ESAFORM Benchmark 2024</h2>
+      <div class="project-meta">
+        Ph.D. Research Assistant · Northwestern University · Oct 2023 – Apr 2025 · 
+        Multi-institution study with 13 partners
+      </div>
+      <p>
+        Contributed to a large-scale benchmark study on the geometric accuracy of complex shapes formed by Single-Point
+        Incremental Forming (SPIF), Two-Point Incremental Forming (TPIF), and Double-Sided Incremental Forming (DSIF).
+        Led DSIF experiments, coordinated data collection, and analyzed deviations across processes.
+      </p>
+      <ul>
+        <li>Executed controlled forming experiments using multiple ISF configurations on a shared benchmark geometry.</li>
+        <li>Processed and compared geometric data from 13 institutions to identify trends in accuracy and process capability.</li>
+        <li>Helped establish shared protocols and data standards for future ISF benchmarking efforts.</li>
+      </ul>
+      <div class="project-image-placeholder">
+        [Figure placeholder – benchmark geometry, deviation maps, or comparison of SPIF/TPIF/DSIF results]
+      </div>
+    </section>
+
+    <!-- Hierarchical Surface Textures / SLIPS -->
+    <section class="project">
+      <h2>Hierarchical Surface Textures for Improved Coating Durability (SLIPS)</h2>
+      <div class="project-meta">
+        Ph.D. Research Assistant · Northwestern University · Aug 2023 – Dec 2024 · 
+        Published in Journal of Manufacturing Science and Engineering
+      </div>
+      <p>
+        Studied the role of surface texturing via DSIF in enhancing the durability of Slippery Liquid-Infused Porous
+        Surfaces (SLIPS) on metal substrates. Developed a process that integrates shape forming and surface texturing
+        using universal tools to simplify manufacturing.
+      </p>
+      <ul>
+        <li>Investigated discretized dimple textures and their effect on lubricant retention and self-healing behavior.</li>
+        <li>Showed that low-speed tool spinning improves surface smoothness and hydrophobicity under sliding contact.</li>
+        <li>Demonstrated longer coating life and better performance under demanding environmental conditions.</li>
+      </ul>
+      <p>
+        Representative publication:
+        <a class="inline-link" href="https://doi.org/10.1115/1.4065026" target="_blank">
+          JMSE – Hierarchical Surface Textures for Improved Coating Durability Using DSIF
+        </a>
+      </p>
+      <div class="project-image-placeholder">
+        [Figure placeholder – textured surfaces, contact angle images, or durability test results]
+      </div>
+    </section>
+
+    <!-- Robotic English Wheel -->
+    <section class="project">
+      <h2>Robotic English Wheel Forming Automation</h2>
+      <div class="project-meta">
+        Ph.D. Research Assistant · Northwestern University · Aug 2023 – Jun 2024
+      </div>
+      <p>
+        Designed and implemented a robotic English wheel system that integrates UR5 robots, a custom gripper, real-time
+        force sensing, and adaptive toolpath control to automate a traditionally manual forming process.
+      </p>
+      <ul>
+        <li>Developed the mechanical design, sensing architecture, and control logic for robotic English wheel forming.</li>
+        <li>Improved repeatability and process understanding relative to purely manual operation.</li>
+        <li>Mentored undergraduate students in design, prototyping, and system validation.</li>
+      </ul>
+      <div class="project-image-placeholder">
+        [Figure placeholder – robotic English wheel setup or forming path visualization]
+      </div>
+    </section>
+
+    <!-- DSIF Hulls / Functional Shell Structures -->
+    <section class="project">
+      <h2>DSIF Manufacturing of Functional Shell Structures for UUV Hulls</h2>
+      <div class="project-meta">
+        Ph.D. Research Assistant · Northwestern University · Sept 2021 – Jun 2023
+      </div>
+      <p>
+        Developed Double-Sided Incremental Forming (DSIF) methods to fabricate shell structures with integrated drag-reducing
+        and anti-biofouling textures for unmanned underwater vehicle (UUV) hulls. Demonstrated DSIF as an agile, tool-free
+        process for low-volume production.
+      </p>
+      <ul>
+        <li>Implemented dual toolpath strategies to form riblet textures on curved shell geometries.</li>
+        <li>Integrated SLIPS coatings to enhance hydrodynamic performance and fouling resistance.</li>
+        <li>Showcased digitally driven, on-demand manufacturing for functional marine components.</li>
+      </ul>
+      <div class="project-image-placeholder">
+        [Figure placeholder – UUV hull shape, riblet textures, or performance comparison]
+      </div>
+    </section>
+
+    <!-- GM Project -->
+    <section class="project">
+      <h2>Robotic Power Hammer Forming & Diagnostics at General Motors</h2>
+      <div class="project-meta">
+        Visiting Researcher · General Motors · Aug 2022 – Jun 2023
+      </div>
+      <p>
+        Automated a traditional power hammer forming process by integrating FANUC robotics with finite element simulations,
+        reducing dependence on scarce manual expertise and improving consistency. Designed a new experimental setup combining
+        high-speed imaging and computer vision to measure impact speed and validate forming dynamics.
+      </p>
+      <ul>
+        <li>Developed robotic forming workflows that improved repeatability and reduced labor time.</li>
+        <li>Used Abaqus simulations to perform springback analysis and optimize process parameters.</li>
+        <li>Communicated findings to engineers and managers, positioning robotic forming as a scalable digital manufacturing solution.</li>
+      </ul>
+      <div class="project-image-placeholder">
+        [Figure placeholder – power hammer setup, robotic tooling, or impact-speed measurement]
+      </div>
+    </section>
+
+    <!-- Acoustic Tweezers (Duke) -->
+    <section class="project">
+      <h2>Frequency-Multiplexed Acoustic Tweezers for Microparticle Manipulation</h2>
+      <div class="project-meta">
+        Research Assistant · Duke University · Sept 2018 – Mar 2020
+      </div>
+      <p>
+        Designed and optimized 3D acoustic tweezers with innovative transducer layouts for dynamic manipulation of
+        microparticles and cells. Combined simulation and experimental testing to implement frequency-multiplexed control,
+        enabling tunable forces and higher throughput for lab-on-a-chip applications.
+      </p>
+      <ul>
+        <li>Developed device geometries and operating strategies for precise, contactless particle manipulation.</li>
+        <li>Integrated simulation, microfabrication, and testing in a full design loop.</li>
+        <li>Contributed to multiple journal papers in acoustofluidics and lab-on-a-chip technologies.</li>
+      </ul>
+      <div class="project-image-placeholder">
+        [Figure placeholder – acoustic tweezers schematic, chip photo, or manipulation results]
+      </div>
+    </section>
+
+  </main>
+</body>
+</html>
