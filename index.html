@@ -53,6 +53,20 @@
       margin-top: 12px;
       color: #444;
     }
+        .intro-container {
+      display: flex;
+      align-items: center;
+      margin-top: 20px;
+      gap: 24px;
+    }
+    .intro-photo {
+      width: 180px;       /* adjust size here */
+      border-radius: 8px; /* softer corners */
+      object-fit: cover;
+    }
+    .intro-text {
+      flex: 1;
+    }
   </style>
 </head>
 <body>
@@ -74,13 +88,20 @@
 
   <main>
     <section class="section">
-      <p class="tagline">
-        I am a Ph.D. candidate in Mechanical Engineering at Northwestern University working with Prof. <a href="https://www.cao.mech.northwestern.edu/jiancao/" target="_blank">Jian Cao</a> and Prof. <a href="https://www.mccormick.northwestern.edu/research-faculty/directory/profiles/ehmann-kornel.html" target="_blank">Kornel Ehmann</a>, specializing in advanced manufacturing, incremental sheet forming (ISF), and process-driven shape control. My work integrates experimental system development with analytical modeling to create new forming and texturing methods that enhance surface quality, precision, and process efficiency.
+      <div class="intro-container">
+        <img src="assets/images/WCMNM.jpg" alt="Putong Kang" class="intro-photo">
 
-        I have collaborated with academic and industry partners, including General Motors, on projects that advance digital manufacturing and sustainable forming technologies. With experience spanning prototyping, system integration, data analysis, and international research coordination, I aim to contribute to R&D, product development, or technology-focused consulting roles where I can apply data-driven problem-solving to real-world engineering challenges.
-      </p>
+        <div class="intro-text">
+          <p class="tagline">
+            I am a Ph.D. candidate in Mechanical Engineering at Northwestern University working with Prof. <a href="https://www.cao.mech.northwestern.edu/jiancao/" target="_blank">Jian Cao</a> and Prof. <a href="https://www.mccormick.northwestern.edu/research-faculty/directory/profiles/ehmann-kornel.html" target="_blank">Kornel Ehmann</a>, specializing in advanced manufacturing, incremental sheet forming (ISF), and process-driven shape control. My work integrates experimental system development with analytical modeling to create new forming and texturing methods that enhance surface quality, precision, and process efficiency.
+          </p>
+          <p>
+            I have collaborated with academic and industry partners, including General Motors, on projects that advance digital manufacturing and sustainable forming technologies. With experience spanning prototyping, system integration, data analysis, and international research coordination, I aim to contribute to R&D, product development, or technology-focused consulting roles where I can apply data-driven problem-solving to real-world engineering challenges.
+          </p>
+        </div>
+      </div>
     </section>
-
+    
         <section class="section">
       <h2>Selected Projects</h2>
       <ul>
